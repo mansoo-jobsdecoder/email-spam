@@ -81,3 +81,7 @@ for i in range(len(emails_data)):
 
 emails_data.to_csv('emails-stopwords.csv')
 
+
+#drop duplicate data
+emails_data.drop_duplicates(inplace=True)
+emails_data.shape
